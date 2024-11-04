@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="add_office_item.css">
+    <title>Add Items</title>
+</head>
+
+<body>
+    <div class="head_content2"></div>
+    <div class="container">
+
+        <h2>Office</h2>
+        <form>
+            <div class="form-row">
+                <div class="col">
+                    <label for="id">Office-ID:</label>
+                    <input type="text" id="Office-ID" name="Office-ID" placeholder="Office-ID" required>
+                </div>
+
+                <div class="col">
+                    <label for="name">Office Name:</label>
+                    <input type="text" id="Office-Name" name="Office-Name" placeholder="Office-Name" required>
+                </div>
+
+                <div class="col">
+                    <label for="room_number">Room Number:</label>
+                    <input type="text" id="room_number" name="room_number" placeholder="Room Number">
+                </div>
+                <div class="col">
+                    <label for="name">Office-Contact</label>
+                    <input type="text" id="Office-Contact" name="Office-Contact" placeholder="Office-Contact">
+                </div>
+            </div>
+
+            <div class="form-row">
+
+                <div class="col">
+                    <label for="Email">Office Email Address</label>
+                    <input type="text" id="Email" name="Email" placeholder="Office Email Address">
+                </div>
+            </div>
+            <div class="back">
+                <button type="back"><a href="office.html">Back</a></button>
+            </div>
+            <div class="submit">
+                <button type="submit">Save Changes</button>
+            </div>
+
+        </form>
+    </div>
+    
+    <div class="copyright">&copy; UIRI INVENTORY MANAGEMENT SYSTEM
+        <span>-sunstudents</span>
+    </div>
+
+
+</body>
+<script class="text/javascript">
+    $('.head_content2').load('header.html')
+
+</script>
+
+</html>

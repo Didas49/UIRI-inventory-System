@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="header.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+            var path = window.location.pathname.split("/").pop();
+            $('.links').each(function () {
+                var href = $(this).attr('href');
+                if (path === href) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Inventory System</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html" class="links">Dashboard</a></li>
+                <li><a href="department.html" class="links">Department</a></li>
+                <li><a href="admin.html" class="links">Administrator</a></li>
+                <li><a href="office.html" class="links">Office</a></li>
+                <li><a href="Add_item.html" class="links">Add item</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="dashboard.html" class="links">Dashboard</a></li>
+                <li><a href="department.html" class="links">Department</a></li>
+                <li><a href="admin.html" class="links">Administrator</a></li>
+                <li><a href="office.html" class="links">Office</a></li>
+                <li><a href="Add_item.html" class="links">Add item</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="header.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Inventory System</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html" class="links active">Dashboard</a></li>
+                <li><a href="department.html" class="links">Department</a></li>
+                <li><a href="admin.html" class="links">Administrator</a></li>
+                <li><a href="office.html" class="links">Office</a></li>
+                <li><a href="Add_item.html" class="links">Add item</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sidebar">
+       
+        <nav>
+            <ul>
+                <li><a href="dashboard.html" class="links active" >Dashboard</a></li>
+                <li><a href="department.html" class="links">Department</a></li>
+                <li><a href="admin.html" class="links">Administrator</a></li>
+                <li><a href="office.html"class="links">Office</a></li>
+                <li><a href="Add_item.html" class="links">Add item</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    let nav_links = document.querySelectorAll('.links');
+    nav_links.forEach(function(link){
+        link.addEventListener('click',function(event){
+            nav_links.forEach(function(link){
+                link.classList.remove('active');
+            });
+            link.classList.add('active');
+        });
+    });
+});
+
+</script>
+
+</body>
+
+
+</html> -->
